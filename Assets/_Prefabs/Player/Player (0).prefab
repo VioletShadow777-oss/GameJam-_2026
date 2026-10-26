@@ -15937,7 +15937,6 @@ MonoBehaviour:
   accelerationFactor: 70
   maxVelocity: 30
   turnFactor: 350
-  playerHealth: {fileID: 7637318508311768022}
   steeringInput: 0
 --- !u!114 &9154782971897521521
 MonoBehaviour:
@@ -16019,7 +16018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bf080d1cfd94f4b890df4ffaf6d809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarDeadEffect
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 7637318508311768022}
 --- !u!1 &4302409608274603040
 GameObject:
   m_ObjectHideFlags: 0

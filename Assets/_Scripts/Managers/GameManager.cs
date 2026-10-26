@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -6,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Car")]
-    public Transform CarPrefab;
     public GameObject startUI;
     public GameObject gameOverUI;
 
@@ -17,11 +15,7 @@ public class GameManager : MonoBehaviour
     public CarController carController;
 
 
-    private void Awake()
-    {
-        Vector3 instantiatePosition = new Vector3(0, 0.773000002f, -43.7000008f);
-        //Instantiate(CarPrefab, instantiatePosition, Quaternion.identity);
-    }
+    
     private void OnEnable()
     {
         // Subscribe to Player died event
@@ -34,7 +28,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
 
-        GetRefernces();
+        //GetRefernces();
 
 
         startUI.SetActive(true);
@@ -81,6 +75,8 @@ public class GameManager : MonoBehaviour
 
         // Display the game-over UI.
         gameOverUI.SetActive(true);
+
+        Debug.Log("Player Died");
     }
 
 }

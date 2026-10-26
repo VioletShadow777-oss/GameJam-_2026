@@ -43,7 +43,7 @@ public class EnemyDieWithEffect : MonoBehaviour
                 
             }
 
-            
+            AddCurrency();
 
             // Playing the camera shake
             StartCoroutine(cameraShake.CameraShakeCoroutine());
@@ -116,7 +116,10 @@ public class EnemyDieWithEffect : MonoBehaviour
     }
 
     
-
+    private void AddCurrency()
+    {
+        CurrencyManager.Instance.AddMoney(100f);
+    }
     
 
 
