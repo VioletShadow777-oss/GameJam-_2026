@@ -16,9 +16,6 @@ public class EnemySpawnManager : MonoBehaviour
     private void Start()
     {
         enemyIndex = 0;
-
-        // Starts Spawning the Enemies
-        StartCoroutine(EnemySpawn_C());
     }
 
     // Spawns enemies after the interval

@@ -10,8 +10,9 @@ public class CarController : MonoBehaviour
     public float maxVelocity = 40f;
     public float turnFactor = 3.5f;
 
+   
     
-   [HideInInspector] public float steeringInput = 0;
+    [HideInInspector] public float steeringInput = 0;
 
     float rotationAngle = 0;
     float steeringMultiplier;
@@ -22,6 +23,8 @@ public class CarController : MonoBehaviour
     {
         carRigidbody = GetComponent<Rigidbody>();
     }
+
+    
 
     private void FixedUpdate()
     {
@@ -143,4 +146,6 @@ public class CarController : MonoBehaviour
         return velocity;
     }
     #endregion
+
+    
 }
