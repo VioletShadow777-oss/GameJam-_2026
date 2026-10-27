@@ -15,8 +15,9 @@ public class EnemyDieWithEffect : MonoBehaviour
 
     [Header("Skid Marks")]
     public GameObject[] skidMarks;
-     
 
+    [Header("Re Spawn Position")]
+    public Transform enemySpawnPosition;
 
     [Header("Explosion Effect")]
     public Transform explosionPrefab;
@@ -83,7 +84,7 @@ public class EnemyDieWithEffect : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         // reseting Enemies Position
-        transform.position = new Vector3(0f, 0.8f, 0f);
+        transform.position = enemySpawnPosition.position;
 
         // Reseting Enemies Rotation
         transform.rotation = Quaternion.identity;

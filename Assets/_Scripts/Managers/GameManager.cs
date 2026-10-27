@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         gameOverUI.SetActive(false);
         carController.enabled = false;
         playerInput.enabled = false;
+        enemySpawnManager.isGameActive = false; 
     }
 
     private void GetRefernces()
@@ -45,9 +46,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame()
     {
-        // Starting the enemy Spawning
-        StartCoroutine(enemySpawnManager.EnemySpawn_C());
-
+        enemySpawnManager.StartSpawning();
         // Enable Player Input
         playerInput.enabled = true;
 
@@ -71,7 +70,7 @@ public class GameManager : MonoBehaviour
         playerInput.enabled = false;
 
         // Stop any ongoing enemy-spawning coroutine.
-        StopCoroutine(enemySpawnManager.EnemySpawn_C());
+        enemySpawnManager.isGameActive = false;
 
         // Display the game-over UI.
         gameOverUI.SetActive(true);
