@@ -52,6 +52,11 @@ public class CurrencyManager : MonoBehaviour
         UpdateUI();
     }
 
+    public void SpendCurrencyFromButton()
+    {
+        SpendMoney(spendAmount);
+    }
+
     public bool SpendMoney(float cost)
     {
         if (cost <= 0f || currentMoney < cost)

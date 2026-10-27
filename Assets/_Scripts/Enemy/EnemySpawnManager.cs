@@ -23,6 +23,9 @@ public class EnemySpawnManager : MonoBehaviour
     [Header("Game State")]
     public bool isGameActive;
 
+    [Header("Star Spawning")]
+    public GameObject starParent;
+    public Transform starPrefab;
     // Local Variables
     private int enemyIndex;
     private float spawnCountdown;
@@ -137,5 +140,12 @@ public class EnemySpawnManager : MonoBehaviour
         Debug.Log("Spawned enemy: " + enemies[enemyIndex].name);
 
         enemyIndex++;
+
+        SpawnStar();
+    }
+
+    private void SpawnStar()
+    {
+        Instantiate(starPrefab, starParent.transform);
     }
 }

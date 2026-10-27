@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/Story.unity
+    guid: 91c58aa843bff2141a07bda5d19c2fff
+  - enabled: 1
     path: Assets/_Scenes/Game.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/_Imported/_Cars/Toon Vehicles Free/AllColors.unity
-    guid: d595838b70bfac14992da0f090538962
+    path: Assets/_Scenes/GameEnd.unity
+    guid: 77a18dbafb00eb442a1ed6a3c6274cdd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
