@@ -8877,6 +8877,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7494773435378723761, guid: c5ceeef3cc793ed42a54faac350f75db, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 533953378}
+    - target: {fileID: 7494773435378723761, guid: c5ceeef3cc793ed42a54faac350f75db, type: 3}
+      propertyPath: explosionPrefab
+      value: 
+      objectReference: {fileID: 4620820608231748082, guid: 3eaac4610186b0b4c99ce330d1f3fa64, type: 3}
+    - target: {fileID: 7494773435378723761, guid: c5ceeef3cc793ed42a54faac350f75db, type: 3}
+      propertyPath: explosionAudioSource
+      value: 
+      objectReference: {fileID: 656750006}
     - target: {fileID: 7637318508311768022, guid: c5ceeef3cc793ed42a54faac350f75db, type: 3}
       propertyPath: healthText
       value: 
