@@ -5,6 +5,7 @@ public class ImageSequence : MonoBehaviour
     public GameObject[] images;
 
     public GameObject toGameButton;
+    public GameObject nextButton;
 
     private int currentIndex = 0;
 
@@ -23,6 +24,7 @@ public class ImageSequence : MonoBehaviour
         }
 
         toGameButton.SetActive(false);
+        nextButton.SetActive(true);
     }
 
     public void Next()
@@ -46,6 +48,9 @@ public class ImageSequence : MonoBehaviour
         if (currentIndex == images.Length - 1)
         {
             toGameButton.SetActive(true);
+
+            // Disable Next Button
+            nextButton.SetActive(false);
         }
     }
 }
