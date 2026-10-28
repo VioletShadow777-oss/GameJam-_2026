@@ -78,4 +78,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Player Died");
     }
 
+    public void OnQuit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+    }
 }
