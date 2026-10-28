@@ -111,7 +111,7 @@ The car has no brake and no reverse. Steering and drift management are the entir
 
 The quickest way to play is the prebuilt Windows build:
 
-1. Download **[Builds.zip](Builds.zip)** (approximately 63 MB).
+1. Download **[Builds.zip](https://shakilahamed.itch.io/bomb-cops)** (approximately 63 MB).
 2. Extract the archive.
 3. Run **`Bomb Cops.exe`**.
 
